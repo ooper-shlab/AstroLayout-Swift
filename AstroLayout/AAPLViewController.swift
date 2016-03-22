@@ -783,7 +783,7 @@ class AAPLViewController: UIViewController {
     /* Double-tap will trigger the 'basic' layout animation. Double-tapping with two fingers (hold down option in the simulator to get multiple fingers) will trigger the keyframe animation. */
 //    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget: self
 //                                                                                action: @selector(changeLayout:)];
-        let doubleTap = UITapGestureRecognizer(target: self, action: "changeLayout:")
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(AAPLViewController.changeLayout(_:)))
 //    doubleTap.numberOfTapsRequired = 2;
         doubleTap.numberOfTapsRequired = 2
 //    doubleTap.numberOfTouchesRequired = 1;
@@ -793,7 +793,7 @@ class AAPLViewController: UIViewController {
 //
 //    UITapGestureRecognizer *twoFingerDoubleTap = [[UITapGestureRecognizer alloc] initWithTarget: self
 //                                                                                         action: @selector(keyframeBasedLayoutChange:)];
-        let twoFingerDoubleTap = UITapGestureRecognizer(target: self, action: "keyframeBasedLayoutChange:")
+        let twoFingerDoubleTap = UITapGestureRecognizer(target: self, action: #selector(AAPLViewController.keyframeBasedLayoutChange(_:)))
 //    twoFingerDoubleTap.numberOfTapsRequired = 2;
         twoFingerDoubleTap.numberOfTapsRequired = 2
 //    twoFingerDoubleTap.numberOfTouchesRequired = 2;

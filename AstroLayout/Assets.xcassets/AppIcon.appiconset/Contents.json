@@ -71,6 +71,12 @@
       "idiom" : "ipad",
       "filename" : "AstroLayout~iPad@2x.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "AstroLayout~iPad Pro@2x copy-1.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
