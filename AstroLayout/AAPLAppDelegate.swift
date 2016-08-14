@@ -12,23 +12,14 @@
      Abstract:
      Main application entry point.
 */
-//
-//@import UIKit;
+
 import UIKit
-//
-//@interface AAPLAppDelegate : UIResponder <UIApplicationDelegate>
+
 @UIApplicationMain
 @objc(AAPLAppDelegate)
 class AAPLAppDelegate: UIResponder, UIApplicationDelegate {
-//
-//@property (strong, nonatomic) UIWindow *window;
+    
     var window: UIWindow?
-//
-//@end
-//
-//
-//#import "AAPLAppDelegate.h"
-//
-//@implementation AAPLAppDelegate
-//@end
+    
+    
 }
