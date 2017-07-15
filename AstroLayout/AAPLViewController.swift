@@ -6,11 +6,11 @@
 //
 //
 /*
-	Copyright (C) 2015 Apple Inc. All Rights Reserved.
-	See LICENSE.txt for this sample’s licensing information
+    Copyright (C) 2015 Apple Inc. All Rights Reserved.
+    See LICENSE.txt for this sample’s licensing information
 
-	Abstract:
-	This sample demonstrates how to properly activate and deactivate groups of constraints in response to a size class change. It also shows how to animate layout changes using UIView animations. This code leverages layout guides and anchors to reduce code overhead and allow for more complex layouts.
+    Abstract:
+    This sample demonstrates how to properly activate and deactivate groups of constraints in response to a size class change. It also shows how to animate layout changes using UIView animations. This code leverages layout guides and anchors to reduce code overhead and allow for more complex layouts.
  */
 
 import UIKit
@@ -340,7 +340,7 @@ class AAPLViewController: UIViewController {
     
     //MARK: - Animations
     
-    func changeLayout(_ tapGesture: UITapGestureRecognizer) {
+    @objc func changeLayout(_ tapGesture: UITapGestureRecognizer) {
         /* When screen is double-tapped, toggle between layouts and animate the change using UIView animation. */
         if tapGesture.state == UIGestureRecognizerState.ended {
             let regularConstraint = regularConstraints.first!
@@ -362,7 +362,7 @@ class AAPLViewController: UIViewController {
     }
     
     
-    func keyframeBasedLayoutChange(_ twoFingerDoubleTap: UITapGestureRecognizer) {
+    @objc func keyframeBasedLayoutChange(_ twoFingerDoubleTap: UITapGestureRecognizer) {
         /* Keyframe animations give more control over how the transition looks. The different timings create different effects.
          If the control doesn't need to be this fine-grained, keeping a reference to the entire array of constraints is enough, as shown with the other tap gesture.
          Try adjusting the timing and options of the constraint changes and see how that affects the animation. */
