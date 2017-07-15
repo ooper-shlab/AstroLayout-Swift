@@ -10,6 +10,8 @@ As this is a line-by-line translation from the original sample code, "redistribu
 Some faults caused by my translation may exist. Not all features tested.
 You should not contact to Apple or SHLab(jp) about any faults caused by my translation.
 
+The Simlulator bundled with Xcode 9 beta 3 does not simulate two-finger double-tap well. (Hold pressing Option, does not work.) Does someone know how? Or this is a bug of the simulator?
+
 ## Requirements
 
 ### Build
